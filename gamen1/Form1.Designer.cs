@@ -29,14 +29,47 @@
         private void InitializeComponent()
         {
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
+            this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.toolStripStatusLabel5 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.toolStripStatusLabel2 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.toolStripStatusLabel3 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.toolStripStatusLabel4 = new System.Windows.Forms.ToolStripStatusLabel();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
+            this.label6 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.splitContainer2 = new System.Windows.Forms.SplitContainer();
             this.splitContainer3 = new System.Windows.Forms.SplitContainer();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.dataGridView3 = new System.Windows.Forms.DataGridView();
+            this.label5 = new System.Windows.Forms.Label();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.button58 = new System.Windows.Forms.Button();
+            this.button57 = new System.Windows.Forms.Button();
+            this.button56 = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
+            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.予定時刻1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.予定時刻2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.内容 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.メンバー = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.勤怠区分 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.名前 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.時刻1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.時刻2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.button55 = new System.Windows.Forms.Button();
             this.button23 = new System.Windows.Forms.Button();
@@ -97,38 +130,13 @@
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.tabPage6 = new System.Windows.Forms.TabPage();
             this.tabPage5 = new System.Windows.Forms.TabPage();
-            this.label3 = new System.Windows.Forms.Label();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.勤怠区分 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.名前 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.時刻1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.時刻2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.予定時刻1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.予定時刻2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.内容 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.メンバー = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
-            this.label4 = new System.Windows.Forms.Label();
-            this.button56 = new System.Windows.Forms.Button();
-            this.button57 = new System.Windows.Forms.Button();
-            this.button58 = new System.Windows.Forms.Button();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.label5 = new System.Windows.Forms.Label();
-            this.dataGridView3 = new System.Windows.Forms.DataGridView();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.button59 = new System.Windows.Forms.Button();
-            this.button60 = new System.Windows.Forms.Button();
-            this.button61 = new System.Windows.Forms.Button();
             this.button62 = new System.Windows.Forms.Button();
+            this.button61 = new System.Windows.Forms.Button();
+            this.button60 = new System.Windows.Forms.Button();
+            this.button59 = new System.Windows.Forms.Button();
+            this.button63 = new System.Windows.Forms.Button();
+            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.statusStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -143,23 +151,58 @@
             this.splitContainer3.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.tabPage2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
             this.SuspendLayout();
             // 
             // statusStrip1
             // 
+            this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripStatusLabel1,
+            this.toolStripStatusLabel5,
+            this.toolStripStatusLabel2,
+            this.toolStripStatusLabel3,
+            this.toolStripStatusLabel4});
             this.statusStrip1.Location = new System.Drawing.Point(0, 521);
             this.statusStrip1.Name = "statusStrip1";
+            this.statusStrip1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.statusStrip1.Size = new System.Drawing.Size(1213, 22);
             this.statusStrip1.TabIndex = 0;
             this.statusStrip1.Text = "statusStrip1";
             // 
+            // toolStripStatusLabel1
+            // 
+            this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
+            this.toolStripStatusLabel1.Size = new System.Drawing.Size(0, 0);
+            // 
+            // toolStripStatusLabel5
+            // 
+            this.toolStripStatusLabel5.Name = "toolStripStatusLabel5";
+            this.toolStripStatusLabel5.Size = new System.Drawing.Size(59, 17);
+            this.toolStripStatusLabel5.Text = "LVL1-2-3";
+            // 
+            // toolStripStatusLabel2
+            // 
+            this.toolStripStatusLabel2.Name = "toolStripStatusLabel2";
+            this.toolStripStatusLabel2.Size = new System.Drawing.Size(53, 17);
+            this.toolStripStatusLabel2.Text = "J.Okuda";
+            // 
+            // toolStripStatusLabel3
+            // 
+            this.toolStripStatusLabel3.Name = "toolStripStatusLabel3";
+            this.toolStripStatusLabel3.Size = new System.Drawing.Size(32, 17);
+            this.toolStripStatusLabel3.Text = "1.00";
+            // 
+            // toolStripStatusLabel4
+            // 
+            this.toolStripStatusLabel4.Name = "toolStripStatusLabel4";
+            this.toolStripStatusLabel4.Size = new System.Drawing.Size(84, 17);
+            this.toolStripStatusLabel4.Text = "TSS SYSTEM";
+            // 
             // splitContainer1
             // 
-            this.splitContainer1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.splitContainer1.FixedPanel = System.Windows.Forms.FixedPanel.Panel1;
             this.splitContainer1.Location = new System.Drawing.Point(0, 0);
@@ -168,21 +211,32 @@
             // 
             // splitContainer1.Panel1
             // 
+            this.splitContainer1.Panel1.Controls.Add(this.label6);
             this.splitContainer1.Panel1.Controls.Add(this.label1);
             // 
             // splitContainer1.Panel2
             // 
             this.splitContainer1.Panel2.Controls.Add(this.splitContainer2);
             this.splitContainer1.Size = new System.Drawing.Size(1213, 521);
-            this.splitContainer1.SplitterDistance = 56;
             this.splitContainer1.TabIndex = 1;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.ForeColor = System.Drawing.Color.Red;
+            this.label6.Location = new System.Drawing.Point(1096, 9);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(105, 12);
+            this.label6.TabIndex = 1;
+            this.label6.Text = "Administrator mode";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(28, 24);
+            this.label1.Font = new System.Drawing.Font("MS UI Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.label1.Location = new System.Drawing.Point(14, 13);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(75, 12);
+            this.label1.Size = new System.Drawing.Size(153, 24);
             this.label1.TabIndex = 0;
             this.label1.Text = "スタートメニュー";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -202,8 +256,9 @@
             // 
             // splitContainer2.Panel2
             // 
+            this.splitContainer2.Panel2.Controls.Add(this.button63);
             this.splitContainer2.Panel2.Controls.Add(this.button59);
-            this.splitContainer2.Size = new System.Drawing.Size(1213, 461);
+            this.splitContainer2.Size = new System.Drawing.Size(1213, 467);
             this.splitContainer2.SplitterDistance = 427;
             this.splitContainer2.TabIndex = 0;
             // 
@@ -246,6 +301,7 @@
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.dateTimePicker2);
             this.tabPage1.Controls.Add(this.textBox10);
             this.tabPage1.Controls.Add(this.textBox9);
             this.tabPage1.Controls.Add(this.textBox8);
@@ -263,7 +319,6 @@
             this.tabPage1.Controls.Add(this.button57);
             this.tabPage1.Controls.Add(this.button56);
             this.tabPage1.Controls.Add(this.label4);
-            this.tabPage1.Controls.Add(this.monthCalendar1);
             this.tabPage1.Controls.Add(this.dataGridView2);
             this.tabPage1.Controls.Add(this.label3);
             this.tabPage1.Controls.Add(this.label2);
@@ -276,10 +331,211 @@
             this.tabPage1.Text = "Information";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
+            // textBox10
+            // 
+            this.textBox10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox10.Location = new System.Drawing.Point(935, 317);
+            this.textBox10.Name = "textBox10";
+            this.textBox10.Size = new System.Drawing.Size(100, 19);
+            this.textBox10.TabIndex = 21;
+            // 
+            // textBox9
+            // 
+            this.textBox9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox9.Location = new System.Drawing.Point(935, 298);
+            this.textBox9.Name = "textBox9";
+            this.textBox9.Size = new System.Drawing.Size(100, 19);
+            this.textBox9.TabIndex = 20;
+            // 
+            // textBox8
+            // 
+            this.textBox8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox8.Location = new System.Drawing.Point(935, 279);
+            this.textBox8.Name = "textBox8";
+            this.textBox8.Size = new System.Drawing.Size(100, 19);
+            this.textBox8.TabIndex = 19;
+            // 
+            // textBox7
+            // 
+            this.textBox7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox7.Location = new System.Drawing.Point(935, 260);
+            this.textBox7.Name = "textBox7";
+            this.textBox7.Size = new System.Drawing.Size(100, 19);
+            this.textBox7.TabIndex = 18;
+            // 
+            // textBox6
+            // 
+            this.textBox6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox6.Location = new System.Drawing.Point(935, 241);
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(100, 19);
+            this.textBox6.TabIndex = 17;
+            // 
+            // textBox5
+            // 
+            this.textBox5.BackColor = System.Drawing.Color.NavajoWhite;
+            this.textBox5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox5.Location = new System.Drawing.Point(835, 317);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(100, 19);
+            this.textBox5.TabIndex = 16;
+            this.textBox5.Text = "経験値";
+            // 
+            // textBox4
+            // 
+            this.textBox4.BackColor = System.Drawing.Color.NavajoWhite;
+            this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox4.Location = new System.Drawing.Point(835, 298);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(100, 19);
+            this.textBox4.TabIndex = 15;
+            this.textBox4.Text = "レベル";
+            // 
+            // textBox3
+            // 
+            this.textBox3.BackColor = System.Drawing.Color.NavajoWhite;
+            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox3.Location = new System.Drawing.Point(835, 260);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(100, 19);
+            this.textBox3.TabIndex = 14;
+            this.textBox3.Text = "回覧有無";
+            // 
+            // textBox2
+            // 
+            this.textBox2.BackColor = System.Drawing.Color.NavajoWhite;
+            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox2.Location = new System.Drawing.Point(835, 279);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(100, 19);
+            this.textBox2.TabIndex = 13;
+            this.textBox2.Text = "本日予定有無";
+            // 
+            // textBox1
+            // 
+            this.textBox1.BackColor = System.Drawing.Color.NavajoWhite;
+            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox1.Location = new System.Drawing.Point(835, 241);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 19);
+            this.textBox1.TabIndex = 12;
+            this.textBox1.Text = "メッセージ未読数";
+            // 
+            // dataGridView3
+            // 
+            this.dataGridView3.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
+            this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView3.ColumnHeadersVisible = false;
+            this.dataGridView3.Location = new System.Drawing.Point(424, 27);
+            this.dataGridView3.Name = "dataGridView3";
+            this.dataGridView3.RowHeadersVisible = false;
+            this.dataGridView3.RowTemplate.Height = 21;
+            this.dataGridView3.Size = new System.Drawing.Size(611, 188);
+            this.dataGridView3.TabIndex = 11;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(422, 12);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(69, 12);
+            this.label5.TabIndex = 10;
+            this.label5.Text = "タイムレポート";
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Font = new System.Drawing.Font("MS UI Gothic", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Time;
+            this.dateTimePicker1.Location = new System.Drawing.Point(257, 12);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(148, 36);
+            this.dateTimePicker1.TabIndex = 9;
+            // 
+            // button58
+            // 
+            this.button58.Location = new System.Drawing.Point(176, 57);
+            this.button58.Name = "button58";
+            this.button58.Size = new System.Drawing.Size(75, 23);
+            this.button58.TabIndex = 8;
+            this.button58.Text = "次の日";
+            this.button58.UseVisualStyleBackColor = true;
+            // 
+            // button57
+            // 
+            this.button57.Location = new System.Drawing.Point(95, 57);
+            this.button57.Name = "button57";
+            this.button57.Size = new System.Drawing.Size(75, 23);
+            this.button57.TabIndex = 7;
+            this.button57.Text = "本日";
+            this.button57.UseVisualStyleBackColor = true;
+            // 
+            // button56
+            // 
+            this.button56.Location = new System.Drawing.Point(14, 57);
+            this.button56.Name = "button56";
+            this.button56.Size = new System.Drawing.Size(75, 23);
+            this.button56.TabIndex = 6;
+            this.button56.Text = "前の日";
+            this.button56.UseVisualStyleBackColor = true;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.ForeColor = System.Drawing.Color.Red;
+            this.label4.Location = new System.Drawing.Point(12, 83);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(210, 12);
+            this.label4.TabIndex = 5;
+            this.label4.Text = "本日ではない日が選択・表示されています。";
+            // 
+            // dataGridView2
+            // 
+            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.予定時刻1,
+            this.予定時刻2,
+            this.内容,
+            this.メンバー});
+            this.dataGridView2.Location = new System.Drawing.Point(14, 260);
+            this.dataGridView2.Name = "dataGridView2";
+            this.dataGridView2.RowHeadersVisible = false;
+            this.dataGridView2.RowTemplate.Height = 21;
+            this.dataGridView2.Size = new System.Drawing.Size(405, 121);
+            this.dataGridView2.TabIndex = 3;
+            // 
+            // 予定時刻1
+            // 
+            this.予定時刻1.HeaderText = "予定時刻1";
+            this.予定時刻1.Name = "予定時刻1";
+            // 
+            // 予定時刻2
+            // 
+            this.予定時刻2.HeaderText = "予定時刻2";
+            this.予定時刻2.Name = "予定時刻2";
+            // 
+            // 内容
+            // 
+            this.内容.HeaderText = "内容";
+            this.内容.Name = "内容";
+            // 
+            // メンバー
+            // 
+            this.メンバー.HeaderText = "メンバー";
+            this.メンバー.Name = "メンバー";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(12, 243);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(63, 12);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "本日の予定";
+            // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(12, 226);
+            this.label2.Location = new System.Drawing.Point(12, 107);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(87, 12);
             this.label2.TabIndex = 1;
@@ -293,13 +549,37 @@
             this.名前,
             this.時刻1,
             this.時刻2});
-            this.dataGridView1.Location = new System.Drawing.Point(14, 241);
+            this.dataGridView1.Location = new System.Drawing.Point(14, 122);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersVisible = false;
             this.dataGridView1.RowTemplate.Height = 21;
-            this.dataGridView1.Size = new System.Drawing.Size(404, 140);
+            this.dataGridView1.Size = new System.Drawing.Size(404, 116);
             this.dataGridView1.TabIndex = 0;
+            // 
+            // 勤怠区分
+            // 
+            this.勤怠区分.HeaderText = "勤怠区分";
+            this.勤怠区分.Name = "勤怠区分";
+            this.勤怠区分.ReadOnly = true;
+            // 
+            // 名前
+            // 
+            this.名前.HeaderText = "名前";
+            this.名前.Name = "名前";
+            this.名前.ReadOnly = true;
+            // 
+            // 時刻1
+            // 
+            this.時刻1.HeaderText = "時刻1";
+            this.時刻1.Name = "時刻1";
+            this.時刻1.ReadOnly = true;
+            // 
+            // 時刻2
+            // 
+            this.時刻2.HeaderText = "時刻2";
+            this.時刻2.Name = "時刻2";
+            this.時刻2.ReadOnly = true;
             // 
             // tabPage2
             // 
@@ -960,9 +1240,9 @@
             // 
             // tabPage6
             // 
-            this.tabPage6.Location = new System.Drawing.Point(4, 22);
+            this.tabPage6.Location = new System.Drawing.Point(4, 34);
             this.tabPage6.Name = "tabPage6";
-            this.tabPage6.Size = new System.Drawing.Size(1049, 399);
+            this.tabPage6.Size = new System.Drawing.Size(1049, 387);
             this.tabPage6.TabIndex = 5;
             this.tabPage6.Text = "決算";
             this.tabPage6.UseVisualStyleBackColor = true;
@@ -976,254 +1256,14 @@
             this.tabPage5.Text = "システム保守";
             this.tabPage5.UseVisualStyleBackColor = true;
             // 
-            // label3
+            // button62
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(422, 226);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(63, 12);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "本日の予定";
-            // 
-            // dataGridView2
-            // 
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.予定時刻1,
-            this.予定時刻2,
-            this.内容,
-            this.メンバー});
-            this.dataGridView2.Location = new System.Drawing.Point(424, 241);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.RowHeadersVisible = false;
-            this.dataGridView2.RowTemplate.Height = 21;
-            this.dataGridView2.Size = new System.Drawing.Size(405, 140);
-            this.dataGridView2.TabIndex = 3;
-            // 
-            // 勤怠区分
-            // 
-            this.勤怠区分.HeaderText = "勤怠区分";
-            this.勤怠区分.Name = "勤怠区分";
-            this.勤怠区分.ReadOnly = true;
-            // 
-            // 名前
-            // 
-            this.名前.HeaderText = "名前";
-            this.名前.Name = "名前";
-            this.名前.ReadOnly = true;
-            // 
-            // 時刻1
-            // 
-            this.時刻1.HeaderText = "時刻1";
-            this.時刻1.Name = "時刻1";
-            this.時刻1.ReadOnly = true;
-            // 
-            // 時刻2
-            // 
-            this.時刻2.HeaderText = "時刻2";
-            this.時刻2.Name = "時刻2";
-            this.時刻2.ReadOnly = true;
-            // 
-            // 予定時刻1
-            // 
-            this.予定時刻1.HeaderText = "予定時刻1";
-            this.予定時刻1.Name = "予定時刻1";
-            // 
-            // 予定時刻2
-            // 
-            this.予定時刻2.HeaderText = "予定時刻2";
-            this.予定時刻2.Name = "予定時刻2";
-            // 
-            // 内容
-            // 
-            this.内容.HeaderText = "内容";
-            this.内容.Name = "内容";
-            // 
-            // メンバー
-            // 
-            this.メンバー.HeaderText = "メンバー";
-            this.メンバー.Name = "メンバー";
-            // 
-            // monthCalendar1
-            // 
-            this.monthCalendar1.Location = new System.Drawing.Point(26, 12);
-            this.monthCalendar1.Name = "monthCalendar1";
-            this.monthCalendar1.TabIndex = 4;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.ForeColor = System.Drawing.Color.Red;
-            this.label4.Location = new System.Drawing.Point(24, 203);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(210, 12);
-            this.label4.TabIndex = 5;
-            this.label4.Text = "本日ではない日が選択・表示されています。";
-            // 
-            // button56
-            // 
-            this.button56.Location = new System.Drawing.Point(14, 177);
-            this.button56.Name = "button56";
-            this.button56.Size = new System.Drawing.Size(75, 23);
-            this.button56.TabIndex = 6;
-            this.button56.Text = "前の日";
-            this.button56.UseVisualStyleBackColor = true;
-            // 
-            // button57
-            // 
-            this.button57.Location = new System.Drawing.Point(95, 177);
-            this.button57.Name = "button57";
-            this.button57.Size = new System.Drawing.Size(75, 23);
-            this.button57.TabIndex = 7;
-            this.button57.Text = "本日";
-            this.button57.UseVisualStyleBackColor = true;
-            // 
-            // button58
-            // 
-            this.button58.Location = new System.Drawing.Point(176, 177);
-            this.button58.Name = "button58";
-            this.button58.Size = new System.Drawing.Size(75, 23);
-            this.button58.TabIndex = 8;
-            this.button58.Text = "次の日";
-            this.button58.UseVisualStyleBackColor = true;
-            // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.Font = new System.Drawing.Font("MS UI Gothic", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Time;
-            this.dateTimePicker1.Location = new System.Drawing.Point(258, 12);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(148, 42);
-            this.dateTimePicker1.TabIndex = 9;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(422, 12);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(69, 12);
-            this.label5.TabIndex = 10;
-            this.label5.Text = "タイムレポート";
-            // 
-            // dataGridView3
-            // 
-            this.dataGridView3.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
-            this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView3.ColumnHeadersVisible = false;
-            this.dataGridView3.Location = new System.Drawing.Point(424, 27);
-            this.dataGridView3.Name = "dataGridView3";
-            this.dataGridView3.RowHeadersVisible = false;
-            this.dataGridView3.RowTemplate.Height = 21;
-            this.dataGridView3.Size = new System.Drawing.Size(611, 188);
-            this.dataGridView3.TabIndex = 11;
-            // 
-            // textBox1
-            // 
-            this.textBox1.BackColor = System.Drawing.Color.NavajoWhite;
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox1.Location = new System.Drawing.Point(835, 241);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 19);
-            this.textBox1.TabIndex = 12;
-            this.textBox1.Text = "メッセージ未読数";
-            // 
-            // textBox2
-            // 
-            this.textBox2.BackColor = System.Drawing.Color.NavajoWhite;
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox2.Location = new System.Drawing.Point(835, 279);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 19);
-            this.textBox2.TabIndex = 13;
-            this.textBox2.Text = "本日予定有無";
-            // 
-            // textBox3
-            // 
-            this.textBox3.BackColor = System.Drawing.Color.NavajoWhite;
-            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox3.Location = new System.Drawing.Point(835, 260);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 19);
-            this.textBox3.TabIndex = 14;
-            this.textBox3.Text = "回覧有無";
-            // 
-            // textBox4
-            // 
-            this.textBox4.BackColor = System.Drawing.Color.NavajoWhite;
-            this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox4.Location = new System.Drawing.Point(835, 298);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 19);
-            this.textBox4.TabIndex = 15;
-            this.textBox4.Text = "レベル";
-            // 
-            // textBox5
-            // 
-            this.textBox5.BackColor = System.Drawing.Color.NavajoWhite;
-            this.textBox5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox5.Location = new System.Drawing.Point(835, 317);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(100, 19);
-            this.textBox5.TabIndex = 16;
-            this.textBox5.Text = "経験値";
-            // 
-            // textBox6
-            // 
-            this.textBox6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox6.Location = new System.Drawing.Point(935, 241);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(100, 19);
-            this.textBox6.TabIndex = 17;
-            // 
-            // textBox7
-            // 
-            this.textBox7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox7.Location = new System.Drawing.Point(935, 260);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(100, 19);
-            this.textBox7.TabIndex = 18;
-            // 
-            // textBox8
-            // 
-            this.textBox8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox8.Location = new System.Drawing.Point(935, 279);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(100, 19);
-            this.textBox8.TabIndex = 19;
-            // 
-            // textBox9
-            // 
-            this.textBox9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox9.Location = new System.Drawing.Point(935, 298);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(100, 19);
-            this.textBox9.TabIndex = 20;
-            // 
-            // textBox10
-            // 
-            this.textBox10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox10.Location = new System.Drawing.Point(935, 317);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(100, 19);
-            this.textBox10.TabIndex = 21;
-            // 
-            // button59
-            // 
-            this.button59.Location = new System.Drawing.Point(1134, 3);
-            this.button59.Name = "button59";
-            this.button59.Size = new System.Drawing.Size(75, 23);
-            this.button59.TabIndex = 0;
-            this.button59.Text = "終了";
-            this.button59.UseVisualStyleBackColor = true;
-            // 
-            // button60
-            // 
-            this.button60.Location = new System.Drawing.Point(3, 3);
-            this.button60.Name = "button60";
-            this.button60.Size = new System.Drawing.Size(139, 23);
-            this.button60.TabIndex = 0;
-            this.button60.Text = "納品スケジュール参照";
-            this.button60.UseVisualStyleBackColor = true;
+            this.button62.Location = new System.Drawing.Point(3, 61);
+            this.button62.Name = "button62";
+            this.button62.Size = new System.Drawing.Size(139, 23);
+            this.button62.TabIndex = 2;
+            this.button62.Text = "納品指示書参照";
+            this.button62.UseVisualStyleBackColor = true;
             // 
             // button61
             // 
@@ -1234,14 +1274,40 @@
             this.button61.Text = "生産スケジュール参照";
             this.button61.UseVisualStyleBackColor = true;
             // 
-            // button62
+            // button60
             // 
-            this.button62.Location = new System.Drawing.Point(3, 61);
-            this.button62.Name = "button62";
-            this.button62.Size = new System.Drawing.Size(139, 23);
-            this.button62.TabIndex = 2;
-            this.button62.Text = "納品指示書参照";
-            this.button62.UseVisualStyleBackColor = true;
+            this.button60.Location = new System.Drawing.Point(3, 3);
+            this.button60.Name = "button60";
+            this.button60.Size = new System.Drawing.Size(139, 23);
+            this.button60.TabIndex = 0;
+            this.button60.Text = "納品スケジュール参照";
+            this.button60.UseVisualStyleBackColor = true;
+            // 
+            // button59
+            // 
+            this.button59.Location = new System.Drawing.Point(1129, 5);
+            this.button59.Name = "button59";
+            this.button59.Size = new System.Drawing.Size(75, 23);
+            this.button59.TabIndex = 0;
+            this.button59.Text = "終了";
+            this.button59.UseVisualStyleBackColor = true;
+            // 
+            // button63
+            // 
+            this.button63.Location = new System.Drawing.Point(1048, 5);
+            this.button63.Name = "button63";
+            this.button63.Size = new System.Drawing.Size(75, 23);
+            this.button63.TabIndex = 1;
+            this.button63.Text = "ログアウト";
+            this.button63.UseVisualStyleBackColor = true;
+            // 
+            // dateTimePicker2
+            // 
+            this.dateTimePicker2.Font = new System.Drawing.Font("MS UI Gothic", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.dateTimePicker2.Location = new System.Drawing.Point(14, 12);
+            this.dateTimePicker2.Name = "dateTimePicker2";
+            this.dateTimePicker2.Size = new System.Drawing.Size(237, 36);
+            this.dateTimePicker2.TabIndex = 22;
             // 
             // Form1
             // 
@@ -1252,6 +1318,8 @@
             this.Controls.Add(this.statusStrip1);
             this.Name = "Form1";
             this.Text = "TSSシステム メニュー";
+            this.statusStrip1.ResumeLayout(false);
+            this.statusStrip1.PerformLayout();
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel1.PerformLayout();
             this.splitContainer1.Panel2.ResumeLayout(false);
@@ -1268,10 +1336,10 @@
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.tabPage2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1355,7 +1423,6 @@
         private System.Windows.Forms.Button button57;
         private System.Windows.Forms.Button button56;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.MonthCalendar monthCalendar1;
         private System.Windows.Forms.DataGridView dataGridView2;
         private System.Windows.Forms.DataGridViewTextBoxColumn 予定時刻1;
         private System.Windows.Forms.DataGridViewTextBoxColumn 予定時刻2;
@@ -1380,6 +1447,14 @@
         private System.Windows.Forms.Button button60;
         private System.Windows.Forms.Button button62;
         private System.Windows.Forms.Button button61;
+        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
+        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel5;
+        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel2;
+        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel3;
+        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel4;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.DateTimePicker dateTimePicker2;
+        private System.Windows.Forms.Button button63;
 
     }
 }
