@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripStatusLabel5 = new System.Windows.Forms.ToolStripStatusLabel();
@@ -36,7 +37,6 @@
             this.toolStripStatusLabel4 = new System.Windows.Forms.ToolStripStatusLabel();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.label6 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             this.splitContainer2 = new System.Windows.Forms.SplitContainer();
             this.splitContainer3 = new System.Windows.Forms.SplitContainer();
             this.tabControl1 = new System.Windows.Forms.TabControl();
@@ -93,6 +93,11 @@
             this.button24 = new System.Windows.Forms.Button();
             this.button22 = new System.Windows.Forms.Button();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.button17 = new System.Windows.Forms.Button();
+            this.groupBox8 = new System.Windows.Forms.GroupBox();
+            this.button16 = new System.Windows.Forms.Button();
+            this.groupBox7 = new System.Windows.Forms.GroupBox();
+            this.button12 = new System.Windows.Forms.Button();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
             this.button11 = new System.Windows.Forms.Button();
             this.tabPage4 = new System.Windows.Forms.TabPage();
@@ -113,11 +118,7 @@
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.button63 = new System.Windows.Forms.Button();
             this.button59 = new System.Windows.Forms.Button();
-            this.groupBox7 = new System.Windows.Forms.GroupBox();
-            this.groupBox8 = new System.Windows.Forms.GroupBox();
-            this.button12 = new System.Windows.Forms.Button();
-            this.button16 = new System.Windows.Forms.Button();
-            this.button17 = new System.Windows.Forms.Button();
+            this.button18 = new System.Windows.Forms.Button();
             this.statusStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
@@ -143,9 +144,9 @@
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.tabPage3.SuspendLayout();
-            this.groupBox6.SuspendLayout();
-            this.groupBox7.SuspendLayout();
             this.groupBox8.SuspendLayout();
+            this.groupBox7.SuspendLayout();
+            this.groupBox6.SuspendLayout();
             this.SuspendLayout();
             // 
             // statusStrip1
@@ -156,10 +157,10 @@
             this.toolStripStatusLabel2,
             this.toolStripStatusLabel3,
             this.toolStripStatusLabel4});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 503);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 539);
             this.statusStrip1.Name = "statusStrip1";
             this.statusStrip1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.statusStrip1.Size = new System.Drawing.Size(928, 22);
+            this.statusStrip1.Size = new System.Drawing.Size(884, 22);
             this.statusStrip1.TabIndex = 0;
             this.statusStrip1.Text = "statusStrip1";
             // 
@@ -196,47 +197,38 @@
             // 
             this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.splitContainer1.FixedPanel = System.Windows.Forms.FixedPanel.Panel1;
+            this.splitContainer1.IsSplitterFixed = true;
             this.splitContainer1.Location = new System.Drawing.Point(0, 0);
             this.splitContainer1.Name = "splitContainer1";
             this.splitContainer1.Orientation = System.Windows.Forms.Orientation.Horizontal;
             // 
             // splitContainer1.Panel1
             // 
+            this.splitContainer1.Panel1.Controls.Add(this.button18);
             this.splitContainer1.Panel1.Controls.Add(this.label6);
-            this.splitContainer1.Panel1.Controls.Add(this.label1);
             // 
             // splitContainer1.Panel2
             // 
             this.splitContainer1.Panel2.Controls.Add(this.splitContainer2);
-            this.splitContainer1.Size = new System.Drawing.Size(928, 503);
+            this.splitContainer1.Size = new System.Drawing.Size(884, 539);
+            this.splitContainer1.SplitterDistance = 42;
             this.splitContainer1.TabIndex = 1;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.ForeColor = System.Drawing.Color.Red;
-            this.label6.Location = new System.Drawing.Point(650, 24);
+            this.label6.Location = new System.Drawing.Point(767, 9);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(105, 12);
             this.label6.TabIndex = 1;
             this.label6.Text = "Administrator mode";
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("MS UI Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.label1.Location = new System.Drawing.Point(14, 13);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(153, 24);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "スタートメニュー";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
-            // 
             // splitContainer2
             // 
-            this.splitContainer2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.splitContainer2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.splitContainer2.FixedPanel = System.Windows.Forms.FixedPanel.Panel2;
+            this.splitContainer2.IsSplitterFixed = true;
             this.splitContainer2.Location = new System.Drawing.Point(0, 0);
             this.splitContainer2.Name = "splitContainer2";
             this.splitContainer2.Orientation = System.Windows.Forms.Orientation.Horizontal;
@@ -249,14 +241,15 @@
             // 
             this.splitContainer2.Panel2.Controls.Add(this.button63);
             this.splitContainer2.Panel2.Controls.Add(this.button59);
-            this.splitContainer2.Size = new System.Drawing.Size(928, 449);
-            this.splitContainer2.SplitterDistance = 413;
+            this.splitContainer2.Size = new System.Drawing.Size(884, 493);
+            this.splitContainer2.SplitterDistance = 457;
             this.splitContainer2.TabIndex = 0;
             // 
             // splitContainer3
             // 
             this.splitContainer3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.splitContainer3.FixedPanel = System.Windows.Forms.FixedPanel.Panel2;
+            this.splitContainer3.IsSplitterFixed = true;
             this.splitContainer3.Location = new System.Drawing.Point(0, 0);
             this.splitContainer3.Name = "splitContainer3";
             // 
@@ -279,8 +272,8 @@
             this.splitContainer3.Panel2.Controls.Add(this.textBox3);
             this.splitContainer3.Panel2.Controls.Add(this.textBox5);
             this.splitContainer3.Panel2.Controls.Add(this.textBox4);
-            this.splitContainer3.Size = new System.Drawing.Size(926, 411);
-            this.splitContainer3.SplitterDistance = 776;
+            this.splitContainer3.Size = new System.Drawing.Size(884, 457);
+            this.splitContainer3.SplitterDistance = 727;
             this.splitContainer3.TabIndex = 1;
             // 
             // tabControl1
@@ -292,11 +285,11 @@
             this.tabControl1.Controls.Add(this.tabPage6);
             this.tabControl1.Controls.Add(this.tabPage5);
             this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tabControl1.ItemSize = new System.Drawing.Size(128, 30);
+            this.tabControl1.ItemSize = new System.Drawing.Size(118, 30);
             this.tabControl1.Location = new System.Drawing.Point(0, 0);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(776, 411);
+            this.tabControl1.Size = new System.Drawing.Size(727, 457);
             this.tabControl1.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
             this.tabControl1.TabIndex = 0;
             // 
@@ -317,14 +310,14 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 34);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(768, 373);
+            this.tabPage1.Size = new System.Drawing.Size(719, 419);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Information";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
             // button64
             // 
-            this.button64.Location = new System.Drawing.Point(680, 339);
+            this.button64.Location = new System.Drawing.Point(638, 390);
             this.button64.Name = "button64";
             this.button64.Size = new System.Drawing.Size(75, 23);
             this.button64.TabIndex = 23;
@@ -348,7 +341,7 @@
             this.dataGridView3.Name = "dataGridView3";
             this.dataGridView3.RowHeadersVisible = false;
             this.dataGridView3.RowTemplate.Height = 21;
-            this.dataGridView3.Size = new System.Drawing.Size(412, 235);
+            this.dataGridView3.Size = new System.Drawing.Size(368, 357);
             this.dataGridView3.TabIndex = 11;
             // 
             // label5
@@ -405,7 +398,7 @@
             this.予定時刻2,
             this.内容,
             this.メンバー});
-            this.dataGridView2.Location = new System.Drawing.Point(14, 243);
+            this.dataGridView2.Location = new System.Drawing.Point(14, 263);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.RowHeadersVisible = false;
             this.dataGridView2.RowTemplate.Height = 21;
@@ -438,7 +431,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(12, 228);
+            this.label3.Location = new System.Drawing.Point(12, 248);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(63, 12);
             this.label3.TabIndex = 2;
@@ -447,7 +440,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(12, 94);
+            this.label2.Location = new System.Drawing.Point(12, 103);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(87, 12);
             this.label2.TabIndex = 1;
@@ -461,7 +454,7 @@
             this.名前,
             this.時刻1,
             this.時刻2});
-            this.dataGridView1.Location = new System.Drawing.Point(14, 109);
+            this.dataGridView1.Location = new System.Drawing.Point(14, 118);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersVisible = false;
@@ -833,17 +826,66 @@
             this.tabPage3.Location = new System.Drawing.Point(4, 34);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(768, 373);
+            this.tabPage3.Size = new System.Drawing.Size(717, 409);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "仕入・在庫・棚卸";
             this.tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // button17
+            // 
+            this.button17.Location = new System.Drawing.Point(231, 161);
+            this.button17.Name = "button17";
+            this.button17.Size = new System.Drawing.Size(200, 23);
+            this.button17.TabIndex = 1;
+            this.button17.Text = "部品入出庫移動一覧";
+            this.button17.UseVisualStyleBackColor = true;
+            this.button17.Click += new System.EventHandler(this.button17_Click);
+            // 
+            // groupBox8
+            // 
+            this.groupBox8.Controls.Add(this.button16);
+            this.groupBox8.Location = new System.Drawing.Point(444, 6);
+            this.groupBox8.Name = "groupBox8";
+            this.groupBox8.Size = new System.Drawing.Size(214, 149);
+            this.groupBox8.TabIndex = 2;
+            this.groupBox8.TabStop = false;
+            this.groupBox8.Text = "部品移動";
+            // 
+            // button16
+            // 
+            this.button16.Location = new System.Drawing.Point(6, 18);
+            this.button16.Name = "button16";
+            this.button16.Size = new System.Drawing.Size(200, 23);
+            this.button16.TabIndex = 2;
+            this.button16.Text = "部品移動";
+            this.button16.UseVisualStyleBackColor = true;
+            this.button16.Click += new System.EventHandler(this.button16_Click);
+            // 
+            // groupBox7
+            // 
+            this.groupBox7.Controls.Add(this.button12);
+            this.groupBox7.Location = new System.Drawing.Point(225, 6);
+            this.groupBox7.Name = "groupBox7";
+            this.groupBox7.Size = new System.Drawing.Size(213, 149);
+            this.groupBox7.TabIndex = 1;
+            this.groupBox7.TabStop = false;
+            this.groupBox7.Text = "部品出庫";
+            // 
+            // button12
+            // 
+            this.button12.Location = new System.Drawing.Point(6, 18);
+            this.button12.Name = "button12";
+            this.button12.Size = new System.Drawing.Size(200, 23);
+            this.button12.TabIndex = 1;
+            this.button12.Text = "部品出庫";
+            this.button12.UseVisualStyleBackColor = true;
             // 
             // groupBox6
             // 
             this.groupBox6.Controls.Add(this.button11);
             this.groupBox6.Location = new System.Drawing.Point(6, 6);
             this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Size = new System.Drawing.Size(237, 149);
+            this.groupBox6.Size = new System.Drawing.Size(213, 149);
             this.groupBox6.TabIndex = 0;
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "部品入庫";
@@ -852,7 +894,7 @@
             // 
             this.button11.Location = new System.Drawing.Point(6, 18);
             this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(224, 23);
+            this.button11.Size = new System.Drawing.Size(200, 23);
             this.button11.TabIndex = 0;
             this.button11.Text = "部品入庫";
             this.button11.UseVisualStyleBackColor = true;
@@ -897,7 +939,7 @@
             // textBox10
             // 
             this.textBox10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox10.Location = new System.Drawing.Point(103, 277);
+            this.textBox10.Location = new System.Drawing.Point(103, 427);
             this.textBox10.Name = "textBox10";
             this.textBox10.Size = new System.Drawing.Size(39, 19);
             this.textBox10.TabIndex = 21;
@@ -914,7 +956,7 @@
             // textBox9
             // 
             this.textBox9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox9.Location = new System.Drawing.Point(103, 258);
+            this.textBox9.Location = new System.Drawing.Point(103, 408);
             this.textBox9.Name = "textBox9";
             this.textBox9.Size = new System.Drawing.Size(39, 19);
             this.textBox9.TabIndex = 20;
@@ -931,7 +973,7 @@
             // textBox8
             // 
             this.textBox8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox8.Location = new System.Drawing.Point(103, 239);
+            this.textBox8.Location = new System.Drawing.Point(103, 389);
             this.textBox8.Name = "textBox8";
             this.textBox8.Size = new System.Drawing.Size(39, 19);
             this.textBox8.TabIndex = 19;
@@ -940,7 +982,7 @@
             // 
             this.textBox2.BackColor = System.Drawing.Color.NavajoWhite;
             this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox2.Location = new System.Drawing.Point(3, 239);
+            this.textBox2.Location = new System.Drawing.Point(3, 389);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(100, 19);
             this.textBox2.TabIndex = 13;
@@ -949,7 +991,7 @@
             // textBox7
             // 
             this.textBox7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox7.Location = new System.Drawing.Point(103, 220);
+            this.textBox7.Location = new System.Drawing.Point(103, 370);
             this.textBox7.Name = "textBox7";
             this.textBox7.Size = new System.Drawing.Size(39, 19);
             this.textBox7.TabIndex = 18;
@@ -958,7 +1000,7 @@
             // 
             this.textBox1.BackColor = System.Drawing.Color.NavajoWhite;
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox1.Location = new System.Drawing.Point(3, 201);
+            this.textBox1.Location = new System.Drawing.Point(3, 351);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(100, 19);
             this.textBox1.TabIndex = 12;
@@ -967,7 +1009,7 @@
             // textBox6
             // 
             this.textBox6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox6.Location = new System.Drawing.Point(103, 201);
+            this.textBox6.Location = new System.Drawing.Point(103, 351);
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(39, 19);
             this.textBox6.TabIndex = 17;
@@ -976,7 +1018,7 @@
             // 
             this.textBox3.BackColor = System.Drawing.Color.NavajoWhite;
             this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox3.Location = new System.Drawing.Point(3, 220);
+            this.textBox3.Location = new System.Drawing.Point(3, 370);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(100, 19);
             this.textBox3.TabIndex = 14;
@@ -986,7 +1028,7 @@
             // 
             this.textBox5.BackColor = System.Drawing.Color.NavajoWhite;
             this.textBox5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox5.Location = new System.Drawing.Point(3, 277);
+            this.textBox5.Location = new System.Drawing.Point(3, 427);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(100, 19);
             this.textBox5.TabIndex = 16;
@@ -996,7 +1038,7 @@
             // 
             this.textBox4.BackColor = System.Drawing.Color.NavajoWhite;
             this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox4.Location = new System.Drawing.Point(3, 258);
+            this.textBox4.Location = new System.Drawing.Point(3, 408);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(100, 19);
             this.textBox4.TabIndex = 15;
@@ -1004,7 +1046,7 @@
             // 
             // button63
             // 
-            this.button63.Location = new System.Drawing.Point(766, 3);
+            this.button63.Location = new System.Drawing.Point(724, 3);
             this.button63.Name = "button63";
             this.button63.Size = new System.Drawing.Size(75, 23);
             this.button63.TabIndex = 1;
@@ -1014,69 +1056,31 @@
             // 
             // button59
             // 
-            this.button59.Location = new System.Drawing.Point(847, 3);
+            this.button59.Location = new System.Drawing.Point(805, 3);
             this.button59.Name = "button59";
             this.button59.Size = new System.Drawing.Size(75, 23);
             this.button59.TabIndex = 0;
             this.button59.Text = "終了";
             this.button59.UseVisualStyleBackColor = true;
             // 
-            // groupBox7
+            // button18
             // 
-            this.groupBox7.Controls.Add(this.button12);
-            this.groupBox7.Location = new System.Drawing.Point(249, 6);
-            this.groupBox7.Name = "groupBox7";
-            this.groupBox7.Size = new System.Drawing.Size(237, 149);
-            this.groupBox7.TabIndex = 1;
-            this.groupBox7.TabStop = false;
-            this.groupBox7.Text = "部品出庫";
-            // 
-            // groupBox8
-            // 
-            this.groupBox8.Controls.Add(this.button16);
-            this.groupBox8.Location = new System.Drawing.Point(492, 6);
-            this.groupBox8.Name = "groupBox8";
-            this.groupBox8.Size = new System.Drawing.Size(240, 149);
-            this.groupBox8.TabIndex = 2;
-            this.groupBox8.TabStop = false;
-            this.groupBox8.Text = "部品移動";
-            // 
-            // button12
-            // 
-            this.button12.Location = new System.Drawing.Point(6, 18);
-            this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(224, 23);
-            this.button12.TabIndex = 1;
-            this.button12.Text = "部品出庫";
-            this.button12.UseVisualStyleBackColor = true;
-            // 
-            // button16
-            // 
-            this.button16.Location = new System.Drawing.Point(10, 18);
-            this.button16.Name = "button16";
-            this.button16.Size = new System.Drawing.Size(224, 23);
-            this.button16.TabIndex = 2;
-            this.button16.Text = "部品移動";
-            this.button16.UseVisualStyleBackColor = true;
-            this.button16.Click += new System.EventHandler(this.button16_Click);
-            // 
-            // button17
-            // 
-            this.button17.Location = new System.Drawing.Point(255, 167);
-            this.button17.Name = "button17";
-            this.button17.Size = new System.Drawing.Size(224, 23);
-            this.button17.TabIndex = 1;
-            this.button17.Text = "部品入出庫移動一覧";
-            this.button17.UseVisualStyleBackColor = true;
-            this.button17.Click += new System.EventHandler(this.button17_Click);
+            this.button18.Image = ((System.Drawing.Image)(resources.GetObject("button18.Image")));
+            this.button18.Location = new System.Drawing.Point(12, 3);
+            this.button18.Name = "button18";
+            this.button18.Size = new System.Drawing.Size(36, 36);
+            this.button18.TabIndex = 2;
+            this.button18.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(928, 525);
+            this.ClientSize = new System.Drawing.Size(884, 561);
             this.Controls.Add(this.splitContainer1);
             this.Controls.Add(this.statusStrip1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.MinimumSize = new System.Drawing.Size(900, 600);
             this.Name = "Form1";
             this.Text = "TSSシステム メニュー";
             this.statusStrip1.ResumeLayout(false);
@@ -1108,9 +1112,9 @@
             this.groupBox2.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.tabPage3.ResumeLayout(false);
-            this.groupBox6.ResumeLayout(false);
-            this.groupBox7.ResumeLayout(false);
             this.groupBox8.ResumeLayout(false);
+            this.groupBox7.ResumeLayout(false);
+            this.groupBox6.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1120,7 +1124,6 @@
 
         private System.Windows.Forms.StatusStrip statusStrip1;
         private System.Windows.Forms.SplitContainer splitContainer1;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.SplitContainer splitContainer2;
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tabPage1;
@@ -1208,6 +1211,7 @@
         private System.Windows.Forms.GroupBox groupBox7;
         private System.Windows.Forms.Button button12;
         private System.Windows.Forms.Button button17;
+        private System.Windows.Forms.Button button18;
 
     }
 }
