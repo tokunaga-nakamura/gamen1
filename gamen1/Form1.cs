@@ -45,5 +45,29 @@ namespace gamen1
             Form form5 = new Form5();
             form5.Show();
         }
+
+        private void button19_Click(object sender, EventArgs e)
+        {
+            Form form6 = new Form6();
+            form6.Show();
+        }
+
+        private void button20_Click(object sender, EventArgs e)
+        {
+            Form form7 = new Form7();
+            form7.ShowDialog();
+        }
+
+        private void button21_Click(object sender, EventArgs e)
+        {
+            Form form8 = new Form8();
+            form8.ShowDialog();
+        }
+
+        private void button12_Click(object sender, EventArgs e)
+        {
+            Form form9 = new Form9();
+            form9.ShowDialog();
+        }
     }
 }

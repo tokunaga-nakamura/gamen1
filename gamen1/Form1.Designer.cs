@@ -36,6 +36,7 @@
             this.toolStripStatusLabel3 = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripStatusLabel4 = new System.Windows.Forms.ToolStripStatusLabel();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
+            this.button18 = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.splitContainer2 = new System.Windows.Forms.SplitContainer();
             this.splitContainer3 = new System.Windows.Forms.SplitContainer();
@@ -95,10 +96,13 @@
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.button17 = new System.Windows.Forms.Button();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
+            this.button21 = new System.Windows.Forms.Button();
             this.button16 = new System.Windows.Forms.Button();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
+            this.button20 = new System.Windows.Forms.Button();
             this.button12 = new System.Windows.Forms.Button();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.button19 = new System.Windows.Forms.Button();
             this.button11 = new System.Windows.Forms.Button();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.tabPage6 = new System.Windows.Forms.TabPage();
@@ -118,7 +122,6 @@
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.button63 = new System.Windows.Forms.Button();
             this.button59 = new System.Windows.Forms.Button();
-            this.button18 = new System.Windows.Forms.Button();
             this.statusStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
@@ -195,6 +198,7 @@
             // 
             // splitContainer1
             // 
+            this.splitContainer1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.splitContainer1.FixedPanel = System.Windows.Forms.FixedPanel.Panel1;
             this.splitContainer1.IsSplitterFixed = true;
@@ -214,6 +218,15 @@
             this.splitContainer1.SplitterDistance = 42;
             this.splitContainer1.TabIndex = 1;
             // 
+            // button18
+            // 
+            this.button18.Image = ((System.Drawing.Image)(resources.GetObject("button18.Image")));
+            this.button18.Location = new System.Drawing.Point(12, 3);
+            this.button18.Name = "button18";
+            this.button18.Size = new System.Drawing.Size(36, 36);
+            this.button18.TabIndex = 2;
+            this.button18.UseVisualStyleBackColor = true;
+            // 
             // label6
             // 
             this.label6.AutoSize = true;
@@ -226,6 +239,7 @@
             // 
             // splitContainer2
             // 
+            this.splitContainer2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.splitContainer2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.splitContainer2.FixedPanel = System.Windows.Forms.FixedPanel.Panel2;
             this.splitContainer2.IsSplitterFixed = true;
@@ -272,8 +286,8 @@
             this.splitContainer3.Panel2.Controls.Add(this.textBox3);
             this.splitContainer3.Panel2.Controls.Add(this.textBox5);
             this.splitContainer3.Panel2.Controls.Add(this.textBox4);
-            this.splitContainer3.Size = new System.Drawing.Size(884, 457);
-            this.splitContainer3.SplitterDistance = 727;
+            this.splitContainer3.Size = new System.Drawing.Size(880, 453);
+            this.splitContainer3.SplitterDistance = 723;
             this.splitContainer3.TabIndex = 1;
             // 
             // tabControl1
@@ -289,7 +303,7 @@
             this.tabControl1.Location = new System.Drawing.Point(0, 0);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(727, 457);
+            this.tabControl1.Size = new System.Drawing.Size(723, 453);
             this.tabControl1.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
             this.tabControl1.TabIndex = 0;
             // 
@@ -310,7 +324,7 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 34);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(719, 419);
+            this.tabPage1.Size = new System.Drawing.Size(715, 415);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Information";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -499,7 +513,7 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 34);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(768, 373);
+            this.tabPage2.Size = new System.Drawing.Size(715, 415);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "メインメニュー";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -826,7 +840,7 @@
             this.tabPage3.Location = new System.Drawing.Point(4, 34);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(717, 409);
+            this.tabPage3.Size = new System.Drawing.Size(715, 415);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "仕入・在庫・棚卸";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -843,6 +857,7 @@
             // 
             // groupBox8
             // 
+            this.groupBox8.Controls.Add(this.button21);
             this.groupBox8.Controls.Add(this.button16);
             this.groupBox8.Location = new System.Drawing.Point(444, 6);
             this.groupBox8.Name = "groupBox8";
@@ -850,6 +865,16 @@
             this.groupBox8.TabIndex = 2;
             this.groupBox8.TabStop = false;
             this.groupBox8.Text = "部品移動";
+            // 
+            // button21
+            // 
+            this.button21.Location = new System.Drawing.Point(6, 47);
+            this.button21.Name = "button21";
+            this.button21.Size = new System.Drawing.Size(200, 23);
+            this.button21.TabIndex = 4;
+            this.button21.Text = "製品構成で部品移動";
+            this.button21.UseVisualStyleBackColor = true;
+            this.button21.Click += new System.EventHandler(this.button21_Click);
             // 
             // button16
             // 
@@ -863,6 +888,7 @@
             // 
             // groupBox7
             // 
+            this.groupBox7.Controls.Add(this.button20);
             this.groupBox7.Controls.Add(this.button12);
             this.groupBox7.Location = new System.Drawing.Point(225, 6);
             this.groupBox7.Name = "groupBox7";
@@ -870,6 +896,16 @@
             this.groupBox7.TabIndex = 1;
             this.groupBox7.TabStop = false;
             this.groupBox7.Text = "部品出庫";
+            // 
+            // button20
+            // 
+            this.button20.Location = new System.Drawing.Point(6, 47);
+            this.button20.Name = "button20";
+            this.button20.Size = new System.Drawing.Size(200, 23);
+            this.button20.TabIndex = 3;
+            this.button20.Text = "製品構成で部品出庫";
+            this.button20.UseVisualStyleBackColor = true;
+            this.button20.Click += new System.EventHandler(this.button20_Click);
             // 
             // button12
             // 
@@ -879,9 +915,11 @@
             this.button12.TabIndex = 1;
             this.button12.Text = "部品出庫";
             this.button12.UseVisualStyleBackColor = true;
+            this.button12.Click += new System.EventHandler(this.button12_Click);
             // 
             // groupBox6
             // 
+            this.groupBox6.Controls.Add(this.button19);
             this.groupBox6.Controls.Add(this.button11);
             this.groupBox6.Location = new System.Drawing.Point(6, 6);
             this.groupBox6.Name = "groupBox6";
@@ -889,6 +927,16 @@
             this.groupBox6.TabIndex = 0;
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "部品入庫";
+            // 
+            // button19
+            // 
+            this.button19.Location = new System.Drawing.Point(6, 47);
+            this.button19.Name = "button19";
+            this.button19.Size = new System.Drawing.Size(200, 23);
+            this.button19.TabIndex = 2;
+            this.button19.Text = "製品構成で部品入庫";
+            this.button19.UseVisualStyleBackColor = true;
+            this.button19.Click += new System.EventHandler(this.button19_Click);
             // 
             // button11
             // 
@@ -904,7 +952,7 @@
             // 
             this.tabPage4.Location = new System.Drawing.Point(4, 34);
             this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Size = new System.Drawing.Size(768, 373);
+            this.tabPage4.Size = new System.Drawing.Size(715, 415);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "日常処理";
             this.tabPage4.UseVisualStyleBackColor = true;
@@ -913,7 +961,7 @@
             // 
             this.tabPage6.Location = new System.Drawing.Point(4, 34);
             this.tabPage6.Name = "tabPage6";
-            this.tabPage6.Size = new System.Drawing.Size(768, 373);
+            this.tabPage6.Size = new System.Drawing.Size(715, 415);
             this.tabPage6.TabIndex = 5;
             this.tabPage6.Text = "決算";
             this.tabPage6.UseVisualStyleBackColor = true;
@@ -922,7 +970,7 @@
             // 
             this.tabPage5.Location = new System.Drawing.Point(4, 34);
             this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Size = new System.Drawing.Size(768, 373);
+            this.tabPage5.Size = new System.Drawing.Size(715, 415);
             this.tabPage5.TabIndex = 4;
             this.tabPage5.Text = "システム保守";
             this.tabPage5.UseVisualStyleBackColor = true;
@@ -1062,15 +1110,6 @@
             this.button59.TabIndex = 0;
             this.button59.Text = "終了";
             this.button59.UseVisualStyleBackColor = true;
-            // 
-            // button18
-            // 
-            this.button18.Image = ((System.Drawing.Image)(resources.GetObject("button18.Image")));
-            this.button18.Location = new System.Drawing.Point(12, 3);
-            this.button18.Name = "button18";
-            this.button18.Size = new System.Drawing.Size(36, 36);
-            this.button18.TabIndex = 2;
-            this.button18.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
@@ -1212,6 +1251,9 @@
         private System.Windows.Forms.Button button12;
         private System.Windows.Forms.Button button17;
         private System.Windows.Forms.Button button18;
+        private System.Windows.Forms.Button button19;
+        private System.Windows.Forms.Button button21;
+        private System.Windows.Forms.Button button20;
 
     }
 }

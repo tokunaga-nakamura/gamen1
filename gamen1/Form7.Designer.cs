@@ -1,6 +1,6 @@
 ﻿namespace gamen1
 {
-    partial class Form4
+    partial class Form7
     {
         /// <summary>
         /// Required designer variable.
@@ -28,32 +28,23 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form4));
-            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form7));
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
-            this.button4 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.splitContainer2 = new System.Windows.Forms.SplitContainer();
             this.splitContainer3 = new System.Windows.Forms.SplitContainer();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
             this.splitContainer4 = new System.Windows.Forms.SplitContainer();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.buhin_cd = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.buhin_name = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.suuryo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.zaiko_kbn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.torihikisaki_cd = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.juchu_no1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.juchu_no2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.idousaki_zaiko_kbn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.idousaki_torihikisaki_cd = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.idousaki_juchu_no1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.idousaki_juchu_no2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.denpyou_no = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.bikou = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.button3 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -73,14 +64,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
-            // statusStrip1
-            // 
-            this.statusStrip1.Location = new System.Drawing.Point(0, 539);
-            this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(884, 22);
-            this.statusStrip1.TabIndex = 0;
-            this.statusStrip1.Text = "statusStrip1";
-            // 
             // splitContainer1
             // 
             this.splitContainer1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
@@ -93,23 +76,23 @@
             // 
             // splitContainer1.Panel1
             // 
-            this.splitContainer1.Panel1.Controls.Add(this.button4);
+            this.splitContainer1.Panel1.Controls.Add(this.button1);
             // 
             // splitContainer1.Panel2
             // 
             this.splitContainer1.Panel2.Controls.Add(this.splitContainer2);
             this.splitContainer1.Size = new System.Drawing.Size(884, 539);
-            this.splitContainer1.SplitterDistance = 42;
-            this.splitContainer1.TabIndex = 1;
+            this.splitContainer1.SplitterDistance = 57;
+            this.splitContainer1.TabIndex = 3;
             // 
-            // button4
+            // button1
             // 
-            this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
-            this.button4.Location = new System.Drawing.Point(12, 3);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(36, 36);
-            this.button4.TabIndex = 0;
-            this.button4.UseVisualStyleBackColor = true;
+            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
+            this.button1.Location = new System.Drawing.Point(10, 10);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(36, 36);
+            this.button1.TabIndex = 0;
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // splitContainer2
             // 
@@ -127,9 +110,10 @@
             // 
             // splitContainer2.Panel2
             // 
-            this.splitContainer2.Panel2.Controls.Add(this.button1);
-            this.splitContainer2.Size = new System.Drawing.Size(884, 493);
-            this.splitContainer2.SplitterDistance = 460;
+            this.splitContainer2.Panel2.Controls.Add(this.button4);
+            this.splitContainer2.Panel2.Controls.Add(this.button2);
+            this.splitContainer2.Size = new System.Drawing.Size(884, 478);
+            this.splitContainer2.SplitterDistance = 442;
             this.splitContainer2.TabIndex = 0;
             // 
             // splitContainer3
@@ -144,31 +128,72 @@
             // 
             // splitContainer3.Panel1
             // 
-            this.splitContainer3.Panel1.Controls.Add(this.textBox2);
+            this.splitContainer3.Panel1.Controls.Add(this.label1);
+            this.splitContainer3.Panel1.Controls.Add(this.comboBox1);
             this.splitContainer3.Panel1.Controls.Add(this.textBox1);
+            this.splitContainer3.Panel1.Controls.Add(this.textBox5);
+            this.splitContainer3.Panel1.Controls.Add(this.textBox4);
+            this.splitContainer3.Panel1.Controls.Add(this.textBox3);
             // 
             // splitContainer3.Panel2
             // 
             this.splitContainer3.Panel2.Controls.Add(this.splitContainer4);
-            this.splitContainer3.Size = new System.Drawing.Size(884, 460);
-            this.splitContainer3.SplitterDistance = 29;
+            this.splitContainer3.Size = new System.Drawing.Size(884, 442);
+            this.splitContainer3.SplitterDistance = 54;
             this.splitContainer3.TabIndex = 0;
             // 
-            // textBox2
+            // label1
             // 
-            this.textBox2.Location = new System.Drawing.Point(40, 3);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 19);
-            this.textBox2.TabIndex = 1;
+            this.label1.BackColor = System.Drawing.Color.NavajoWhite;
+            this.label1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label1.Location = new System.Drawing.Point(10, 3);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(70, 19);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "製品コード";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(211, 28);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(426, 20);
+            this.comboBox1.TabIndex = 4;
             // 
             // textBox1
             // 
             this.textBox1.BackColor = System.Drawing.Color.NavajoWhite;
-            this.textBox1.Location = new System.Drawing.Point(3, 3);
+            this.textBox1.Location = new System.Drawing.Point(10, 28);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(37, 19);
+            this.textBox1.Size = new System.Drawing.Size(201, 19);
             this.textBox1.TabIndex = 0;
-            this.textBox1.Text = "SEQ";
+            this.textBox1.Text = "製品構成番号/製品構成名称";
+            // 
+            // textBox5
+            // 
+            this.textBox5.BackColor = System.Drawing.Color.Gainsboro;
+            this.textBox5.Location = new System.Drawing.Point(268, 3);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.ReadOnly = true;
+            this.textBox5.Size = new System.Drawing.Size(369, 19);
+            this.textBox5.TabIndex = 3;
+            // 
+            // textBox4
+            // 
+            this.textBox4.BackColor = System.Drawing.Color.NavajoWhite;
+            this.textBox4.Location = new System.Drawing.Point(211, 3);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(57, 19);
+            this.textBox4.TabIndex = 2;
+            this.textBox4.Text = "製品名";
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(80, 3);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(131, 19);
+            this.textBox3.TabIndex = 1;
             // 
             // splitContainer4
             // 
@@ -187,128 +212,57 @@
             // splitContainer4.Panel2
             // 
             this.splitContainer4.Panel2.Controls.Add(this.button3);
-            this.splitContainer4.Panel2.Controls.Add(this.button2);
-            this.splitContainer4.Size = new System.Drawing.Size(884, 427);
-            this.splitContainer4.SplitterDistance = 394;
-            this.splitContainer4.TabIndex = 1;
+            this.splitContainer4.Size = new System.Drawing.Size(884, 384);
+            this.splitContainer4.SplitterDistance = 346;
+            this.splitContainer4.TabIndex = 0;
             // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.buhin_cd,
-            this.buhin_name,
-            this.suuryo,
-            this.zaiko_kbn,
-            this.torihikisaki_cd,
-            this.juchu_no1,
-            this.juchu_no2,
-            this.idousaki_zaiko_kbn,
-            this.idousaki_torihikisaki_cd,
-            this.idousaki_juchu_no1,
-            this.idousaki_juchu_no2,
-            this.denpyou_no,
-            this.bikou});
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView1.Location = new System.Drawing.Point(0, 0);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 21;
-            this.dataGridView1.Size = new System.Drawing.Size(880, 390);
+            this.dataGridView1.Size = new System.Drawing.Size(880, 342);
             this.dataGridView1.TabIndex = 0;
-            // 
-            // buhin_cd
-            // 
-            this.buhin_cd.HeaderText = "部品コード";
-            this.buhin_cd.Name = "buhin_cd";
-            // 
-            // buhin_name
-            // 
-            this.buhin_name.HeaderText = "部品名";
-            this.buhin_name.Name = "buhin_name";
-            // 
-            // suuryo
-            // 
-            this.suuryo.HeaderText = "数量";
-            this.suuryo.Name = "suuryo";
-            // 
-            // zaiko_kbn
-            // 
-            this.zaiko_kbn.HeaderText = "在庫区分";
-            this.zaiko_kbn.Name = "zaiko_kbn";
-            // 
-            // torihikisaki_cd
-            // 
-            this.torihikisaki_cd.HeaderText = "取引先コード";
-            this.torihikisaki_cd.Name = "torihikisaki_cd";
-            // 
-            // juchu_no1
-            // 
-            this.juchu_no1.HeaderText = "受注No１";
-            this.juchu_no1.Name = "juchu_no1";
-            // 
-            // juchu_no2
-            // 
-            this.juchu_no2.HeaderText = "受注No２";
-            this.juchu_no2.Name = "juchu_no2";
-            // 
-            // idousaki_zaiko_kbn
-            // 
-            this.idousaki_zaiko_kbn.HeaderText = "移動先在庫区分";
-            this.idousaki_zaiko_kbn.Name = "idousaki_zaiko_kbn";
-            // 
-            // idousaki_torihikisaki_cd
-            // 
-            this.idousaki_torihikisaki_cd.HeaderText = "移動先取引先コード";
-            this.idousaki_torihikisaki_cd.Name = "idousaki_torihikisaki_cd";
-            // 
-            // idousaki_juchu_no1
-            // 
-            this.idousaki_juchu_no1.HeaderText = "移動先受注No１";
-            this.idousaki_juchu_no1.Name = "idousaki_juchu_no1";
-            // 
-            // idousaki_juchu_no2
-            // 
-            this.idousaki_juchu_no2.HeaderText = "移動先受注No2";
-            this.idousaki_juchu_no2.Name = "idousaki_juchu_no2";
-            // 
-            // denpyou_no
-            // 
-            this.denpyou_no.HeaderText = "伝票番号";
-            this.denpyou_no.Name = "denpyou_no";
-            // 
-            // bikou
-            // 
-            this.bikou.HeaderText = "備考";
-            this.bikou.Name = "bikou";
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(643, 3);
+            this.button3.Location = new System.Drawing.Point(714, 3);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 1;
-            this.button3.Text = "行追加";
+            this.button3.TabIndex = 0;
+            this.button3.Text = "数量クリア";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(714, 3);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(75, 23);
+            this.button4.TabIndex = 1;
+            this.button4.Text = "登録";
+            this.button4.UseVisualStyleBackColor = true;
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(724, 3);
+            this.button2.Location = new System.Drawing.Point(795, 3);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 0;
-            this.button2.Text = "行削除";
+            this.button2.Text = "終了";
             this.button2.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // statusStrip1
             // 
-            this.button1.Location = new System.Drawing.Point(806, 3);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "終了";
-            this.button1.UseVisualStyleBackColor = true;
+            this.statusStrip1.Location = new System.Drawing.Point(0, 539);
+            this.statusStrip1.Name = "statusStrip1";
+            this.statusStrip1.Size = new System.Drawing.Size(884, 22);
+            this.statusStrip1.TabIndex = 2;
+            this.statusStrip1.Text = "statusStrip1";
             // 
-            // Form4
+            // Form7
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -316,8 +270,8 @@
             this.Controls.Add(this.splitContainer1);
             this.Controls.Add(this.statusStrip1);
             this.MinimumSize = new System.Drawing.Size(900, 600);
-            this.Name = "Form4";
-            this.Text = "部品移動";
+            this.Name = "Form7";
+            this.Text = "製品構成を使用した部品出庫";
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
@@ -343,30 +297,21 @@
 
         #endregion
 
-        private System.Windows.Forms.StatusStrip statusStrip1;
         private System.Windows.Forms.SplitContainer splitContainer1;
+        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.SplitContainer splitContainer2;
         private System.Windows.Forms.SplitContainer splitContainer3;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.SplitContainer splitContainer4;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn buhin_cd;
-        private System.Windows.Forms.DataGridViewTextBoxColumn buhin_name;
-        private System.Windows.Forms.DataGridViewTextBoxColumn suuryo;
-        private System.Windows.Forms.DataGridViewTextBoxColumn zaiko_kbn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn torihikisaki_cd;
-        private System.Windows.Forms.DataGridViewTextBoxColumn juchu_no1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn juchu_no2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn idousaki_zaiko_kbn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn idousaki_torihikisaki_cd;
-        private System.Windows.Forms.DataGridViewTextBoxColumn idousaki_juchu_no1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn idousaki_juchu_no2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn denpyou_no;
-        private System.Windows.Forms.DataGridViewTextBoxColumn bikou;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.StatusStrip statusStrip1;
     }
 }
